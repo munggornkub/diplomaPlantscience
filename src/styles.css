@@ -1,0 +1,48 @@
+:root {
+  --font-sans: "IBM Plex Sans Thai", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --ink: #183126;
+  --muted: #647169;
+  --paper: #f5f3e9;
+  --panel: #fffdf5;
+  --leaf: #2d6a4f;
+  --line: #d7dacd;
+}
+* { box-sizing: border-box; }
+html { background: var(--paper); color: var(--ink); font-family: var(--font-sans); }
+body { margin: 0; }
+a { color: inherit; }
+.site-header { align-items: center; background: var(--ink); color: white; display: flex; gap: 2rem; min-height: 72px; padding: 0 2rem; }
+.brand { font-family: var(--font-mono); font-weight: 600; letter-spacing: .06em; text-decoration: none; }
+.brand span { color: #a7d8b8; }
+.top-nav { display: flex; flex: 1; gap: .4rem; justify-content: flex-end; }
+.nav-group { position: relative; }
+.nav-group > span { cursor: default; display: block; padding: .75rem; }
+.nav-menu { background: var(--panel); border: 1px solid var(--line); box-shadow: 0 12px 32px #10271d26; display: none; min-width: 210px; padding: .4rem; position: absolute; right: 0; z-index: 10; }
+.nav-group:hover .nav-menu, .nav-group:focus-within .nav-menu { display: grid; }
+.nav-menu a { color: var(--ink); padding: .55rem .7rem; text-decoration: none; }
+.nav-menu a:hover, .nav-menu a.active { background: #dfeddf; }
+.layout { display: grid; grid-template-columns: 280px 1fr; min-height: calc(100vh - 72px); }
+.sidebar { border-right: 1px solid var(--line); padding: 1.5rem; }
+.sidebar section { margin-bottom: 1.5rem; }
+.sidebar h2 { font-size: .78rem; letter-spacing: .08em; margin: 0; text-transform: uppercase; }
+.sidebar p { color: var(--muted); font-size: .8rem; margin: .2rem 0 .5rem; }
+.sidebar a { border-left: 2px solid transparent; display: grid; padding: .5rem .7rem; text-decoration: none; }
+.sidebar a.active { background: #e4ecdf; border-color: var(--leaf); }
+.sidebar small { color: var(--muted); }
+main { max-width: 980px; padding: clamp(2rem, 5vw, 5rem); width: 100%; }
+.eyebrow { color: var(--leaf); font-family: var(--font-mono); font-size: .8rem; letter-spacing: .14em; }
+.page-head h1 { font-size: clamp(2.2rem, 6vw, 5rem); line-height: 1; margin: .4rem 0 1rem; }
+.page-head > p:last-child { color: var(--muted); font-size: 1.15rem; }
+.content-section { background: var(--panel); border: 1px solid var(--line); margin-top: 3rem; padding: 1.5rem; }
+@media (max-width: 880px) {
+  .site-header { align-items: flex-start; flex-direction: column; gap: .2rem; padding-block: 1rem; }
+  .top-nav { flex-wrap: wrap; justify-content: flex-start; }
+  .layout { grid-template-columns: 1fr; }
+  .sidebar { border-bottom: 1px solid var(--line); border-right: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 560px) {
+  .sidebar { grid-template-columns: 1fr; }
+  .nav-group > span { padding: .4rem; }
+  main { padding: 1.5rem; }
+}
