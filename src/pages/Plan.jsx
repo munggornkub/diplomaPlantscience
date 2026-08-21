@@ -1,2 +1,4 @@
-import PageTemplate from "./PageTemplate";
-export default function Plan() { return <PageTemplate title="แผนการเรียน" step="N" />; }
+import { courses, studyPlan } from "../curriculumData"; import { PageHead } from "./ui";
+const names=Object.fromEntries(courses.map(x=>[x[0],x[1]])); const general={"30000-1201":"ภาษาอังกฤษสำหรับงานอาชีพ","30000*1303":"ปัญญาประดิษฐ์เชิงสร้างสรรค์เบื้องต้น","30000-1606":"ภาวะผู้นำและการทำงานเป็นทีม","30000-1102":"ทักษะการเขียนและการพูดภาษาไทยในงานอาชีพ","30000-1316":"เทคโนโลยีการจัดการพลังงานและสิ่งแวดล้อม"};
+export default function Plan(){return <><PageHead title="แผนการศึกษา" subtitle="แผนเสนอแนะสำหรับผู้สำเร็จ ปวช. ด้านพืชศาสตร์หรือเทียบเท่า · รวม 81 หน่วยกิต"/><div className="term-grid">{studyPlan.map(t=><section key={t.term}><header><h2>{t.term}</h2><strong>{t.credits} หน่วยกิต</strong></header><ul>{t.codes.map(c=><li key={c}><code>{c}</code><span>{names[c]||general[c]}</span></li>)}</ul></section>)}</div><p className="source-note">ผู้สำเร็จ ม.6 หรือผู้ไม่มีพื้นฐานวิชาชีพต้องเรียนวิชาปรับพื้นฐานเพิ่ม 12 หน่วยกิต โดยไม่นับรวมในหน่วยกิตหลักสูตร</p></>}
+

@@ -8,6 +8,8 @@ import Plan from "./pages/Plan";
 import Graph from "./pages/Graph";
 import Faculty from "./pages/Faculty";
 import OBE from "./pages/OBE";
+import StakeholderNeeds from "./pages/StakeholderNeeds";
+import Benchmark from "./pages/Benchmark";
 import PLO from "./pages/PLO";
 import YLO from "./pages/YLO";
 import CLO from "./pages/CLO";
@@ -35,6 +37,8 @@ export default function App() {
             <Route path="/graph" element={<Graph />} />
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/obe" element={<OBE />} />
+            <Route path="/sh-needs" element={<StakeholderNeeds />} />
+            <Route path="/benchmark" element={<Benchmark />} />
             <Route path="/plo" element={<PLO />} />
             <Route path="/ylo" element={<YLO />} />
             <Route path="/clo" element={<CLO />} />

@@ -1,2 +1,3 @@
-import PageTemplate from "./PageTemplate";
-export default function KSAPedagogy() { return <PageTemplate title="KSA Pedagogy" step="N" />; }
+import { PageHead } from "./ui";
+const ksa=[{k:"Knowledge",levels:"K1-K6",text:"จำ เข้าใจ ประยุกต์ วิเคราะห์ ประเมิน และสร้างสรรค์"},{k:"Skill",levels:"S1-S5",text:"รับรู้ ทำตาม ทำถูกต้อง ทำคล่องแคล่ว และบูรณาการเป็นธรรมชาติ"},{k:"Attitude",levels:"A1-A5",text:"รับรู้ ตอบสนอง เห็นคุณค่า จัดระบบคุณค่า และยึดถือเป็นคุณลักษณะ"}];
+export default function KSAPedagogy(){return <><PageHead title="Knowledge · Skill · Attitude" subtitle="ระดับการเรียนรู้ตาม Bloom's Taxonomy ในภาคผนวกหลักสูตร"/><div className="structure-cards">{ksa.map(x=><article key={x.k}><span>{x.levels}</span><div><h2>{x.k}</h2><p>{x.text}</p></div></article>)}</div><p className="source-note">PLO และ CLO ของทุกรายวิชามีการระบุระดับ K/S/A และเชื่อมโยงกลับไปยัง PLO ในภาคผนวก ฏ-ฐ</p></>}

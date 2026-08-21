@@ -27,6 +27,8 @@ tags:
 - [[02_Current_Curriculum_2570/02_Program_Faculty|อาจารย์ประจำหลักสูตร]]
 - [[02_Current_Curriculum_2570/03_Curriculum_Structure|Curriculum Structure]]
 - [[02_Current_Curriculum_2570/04_Tracks_and_Learning_Design|Tracks and Learning Design]]
+- [[02_Current_Curriculum_2570/05_Resources_and_Budget|นักศึกษา ทรัพยากร และงบประมาณ]]
+- [[02_Current_Curriculum_2570/06_Quality_Assurance|การประกันคุณภาพและการพัฒนาหลักสูตร]]
 
 ## 03_OBE_PLO_Design_2570
 
@@ -98,5 +100,11 @@ tags:
 โครงสำหรับอธิบายแบบจำลองและหน้าหลักของฐานข้อมูล
 
 - [[09_Database_Schema/00_Database_Home|Database Home]]
+
+## 10_Source_Index
+
+ดัชนีเอกสารต้นทางและตำแหน่งข้อมูลในไฟล์หลักสูตร
+
+- [[10_Source_Index/01_Curriculum_2570_Source_Index|ดัชนีเอกสารหลักสูตร ปวส. พืชศาสตร์ พ.ศ. 2570]]
 
 > [!todo] ยังไม่มีข้อมูล

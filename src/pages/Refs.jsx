@@ -1,2 +1,2 @@
-import PageTemplate from "./PageTemplate";
-export default function Refs() { return <PageTemplate title="ข้อมูลอ้างอิง" step="N" />; }
+import { PageHead } from "./ui";
+export default function Refs(){return <><PageHead title="ข้อมูลอ้างอิง" subtitle="แหล่งข้อมูลหลักที่ใช้สร้างฐานข้อมูลและเว็บไซต์"/><section className="content-section"><h2>เอกสารต้นทางหลัก</h2><p><strong>หลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง ประเภทวิชาเกษตรกรรมและประมง กลุ่มอาชีพการผลิตพืช สาขาวิชาพืชศาสตร์ (หลักสูตรใหม่ พ.ศ. 2570)</strong></p><ul><li>หน่วยงาน: คณะเทคโนโลยีการเกษตร มหาวิทยาลัยกาฬสินธุ์</li><li>จำนวน 270 หน้า PDF</li><li>สถานะ: ฉบับเสนอกรรมการบริหารคณะ</li><li>ข้อมูลทุกหน้าของเว็บชุดนี้แทนที่ข้อมูลเดิมโดยอ้างอิงเอกสารฉบับนี้</li></ul></section></>}

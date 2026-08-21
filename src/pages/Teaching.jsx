@@ -1,2 +1,3 @@
-import PageTemplate from "./PageTemplate";
-export default function Teaching() { return <PageTemplate title="การเรียนการสอน" step="N" />; }
+import { PageHead } from "./ui";
+const methods=["Work-based & Practice-based Learning","Learning by Doing และโจทย์จากแปลงผลิตจริง","Technology-enhanced Learning","Problem-based และ Case-based Learning","Project-based และ Entrepreneurial Learning","Collaborative และ Community-based Learning"];
+export default function Teaching(){return <><PageHead title="กลยุทธ์การเรียนการสอน" subtitle="วิธีการสอนที่กำหนดในหมวด 19 ของเล่มหลักสูตร"/><div className="structure-cards">{methods.map((m,i)=><article key={m}><span>{String(i+1).padStart(2,"0")}</span><div><h2>{m}</h2><p>เชื่อมทฤษฎีกับการปฏิบัติในห้องปฏิบัติการ แปลงผลิต ชุมชน และสถานประกอบการ</p></div></article>)}</div></>}

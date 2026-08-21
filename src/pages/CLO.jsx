@@ -1,2 +1,2 @@
-import PageTemplate from "./PageTemplate";
-export default function CLO() { return <PageTemplate title="CLO" step="N" />; }
+import { courses } from "../curriculumData"; import { PageHead } from "./ui";
+export default function CLO(){return <><PageHead title="ผลลัพธ์การเรียนรู้ระดับรายวิชา" subtitle="Course Learning Outcomes · มี KSA และความเชื่อมโยง PLO ตามภาคผนวกหลักสูตร"/><section className="content-section"><h2>สถานะข้อมูล</h2><div className="metric-grid compact"><div><strong>42</strong><span>ไฟล์รายวิชา</span></div><div><strong>31</strong><span>หน้าตาราง CLO-KSA-PLO</span></div><div><strong>6</strong><span>PLO เชื่อมโยง</span></div></div><p>แต่ละรายวิชามี CLO จุดประสงค์ สมรรถนะ และคำอธิบายจากเอกสารต้นฉบับ พร้อมเลขหน้าอ้างอิงใน vault</p></section><div className="course-list compact-list">{courses.map(([code,name])=><article key={code}><code>{code}</code><div><h2>{name}</h2><span>มี CLO และ KSA</span></div></article>)}</div></>}

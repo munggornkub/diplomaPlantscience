@@ -1,2 +1,3 @@
-import PageTemplate from "./PageTemplate";
-export default function Assessment() { return <PageTemplate title="การประเมินผล" step="N" />; }
+import { PageHead } from "./ui";
+const items=["Rubric และ Checklist การปฏิบัติงานจริง","Performance Assessment ตามขั้นตอนและมาตรฐาน","Case/Problem-based Assessment","แผนการผลิต แผนธุรกิจ และโครงการ","Portfolio และบันทึกการปฏิบัติงาน","Peer Assessment และข้อมูลสะท้อนกลับจากสถานประกอบการ"];
+export default function Assessment(){return <><PageHead title="การวัดและประเมินผล" subtitle="ประเมินทั้งความรู้ การปฏิบัติจริง ผลงาน และพฤติกรรมตาม PLO"/><div className="course-list">{items.map((x,i)=><article key={x}><code>{String(i+1).padStart(2,"0")}</code><div><h2>{x}</h2><span>หลักฐานประเมินตามหมวด 19.1</span></div></article>)}</div></>}
