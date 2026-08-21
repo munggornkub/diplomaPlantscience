@@ -115,6 +115,37 @@ main { max-width: 1400px; padding: clamp(2rem, 5vw, 5rem); width: 100%; }
 .benchmark-table th,.benchmark-table td { border-bottom: 1px solid var(--line); padding: .7rem; text-align: center; }
 .benchmark-table th:first-child,.benchmark-table td:first-child { text-align: left; }
 .benchmark-table th { background: #e4ecdf; color: var(--leaf); }
+.graph-shell { display:grid; gap:1rem; grid-template-columns:320px minmax(0,1fr); margin-top:2rem; }
+.plo-rail { display:grid; gap:.6rem; }
+.plo-rail button { background:white; border:1px solid var(--line); border-radius:14px; cursor:pointer; display:grid; gap:.25rem; grid-template-columns:1fr auto; padding:1rem; text-align:left; }
+.plo-rail button > span { color:var(--leaf); font-family:var(--font-mono); font-weight:700; }
+.plo-rail button > strong { color:var(--leaf); font-family:var(--font-mono); font-size:1.3rem; }
+.plo-rail button > small { color:var(--muted); grid-column:1/-1; line-height:1.4; }
+.plo-rail button.active { background:var(--ink); border-color:var(--ink); box-shadow:0 14px 35px #102c2230; }
+.plo-rail button.active span,.plo-rail button.active strong { color:var(--lime); }
+.plo-rail button.active small { color:#d5e1da; }
+.course-graph-panel { background:#e7eee7; border-radius:20px; padding:1.5rem; }
+.course-graph-panel > header { align-items:start; display:flex; gap:2rem; justify-content:space-between; }
+.course-graph-panel h2 { font-size:2rem; margin:.25rem 0; }
+.course-graph-panel header p:last-child { color:var(--muted); line-height:1.55; max-width:760px; }
+.course-graph-panel header > strong { color:var(--leaf); font-family:var(--font-mono); font-size:2.4rem; white-space:nowrap; }
+.course-graph-panel header > strong small { font-family:var(--font-sans); font-size:.75rem; }
+.graph-course-grid { display:grid; gap:.6rem; grid-template-columns:repeat(2,minmax(0,1fr)); margin-top:1rem; }
+.graph-course-grid button { background:white; border:1px solid transparent; border-radius:12px; cursor:pointer; display:grid; gap:.25rem; padding:.9rem; text-align:left; }
+.graph-course-grid button:hover,.graph-course-grid button.active { border-color:var(--leaf); box-shadow:0 8px 24px #153c2818; }
+.graph-course-grid code { color:var(--leaf); font-size:.68rem; }
+.graph-course-grid strong { font-size:.87rem; }
+.graph-course-grid small { color:var(--muted); }
+.graph-detail header { align-items:start; display:flex; justify-content:space-between; }
+.graph-detail h2 { margin:.25rem 0; }
+.graph-detail header p:last-child { color:var(--muted); margin:.2rem 0; }
+.graph-detail header button { background:transparent; border:1px solid var(--line); border-radius:999px; cursor:pointer; padding:.5rem .8rem; }
+.clo-table { overflow-x:auto; }
+.clo-table table { border-collapse:collapse; margin-top:1rem; min-width:900px; width:100%; }
+.clo-table th,.clo-table td { border-bottom:1px solid var(--line); padding:.7rem; text-align:center; vertical-align:top; }
+.clo-table th:nth-child(2),.clo-table td:nth-child(2) { text-align:left; }
+.clo-table th { background:#e7eee7; color:var(--leaf); }
+.clo-table tr.highlight { background:#f1f7d8; }
 .alluvial-panel { background: var(--panel); border: 1px solid var(--line); box-shadow: 0 22px 60px #18312612; margin-top: 2.5rem; overflow: hidden; }
 .alluvial-toolbar { align-items: end; border-bottom: 1px solid var(--line); display: flex; gap: 2rem; justify-content: space-between; padding: 1.5rem; }
 .alluvial-toolbar h2 { font-size: 1.55rem; margin: .25rem 0; }
@@ -151,6 +182,8 @@ main { max-width: 1400px; padding: clamp(2rem, 5vw, 5rem); width: 100%; }
   .metric-grid,.structure-list { grid-template-columns: repeat(2,1fr); }
   .term-grid { grid-template-columns: 1fr; }
   .sh-grid { grid-template-columns: 1fr; }
+  .graph-shell { grid-template-columns:1fr; }
+  .plo-rail { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media (max-width: 560px) {
   .sidebar { grid-template-columns: 1fr; }
@@ -165,6 +198,7 @@ main { max-width: 1400px; padding: clamp(2rem, 5vw, 5rem); width: 100%; }
   .metric-grid,.metric-grid.compact,.structure-list { grid-template-columns: 1fr; }
   .course-list article { grid-template-columns: 1fr; }
   .group-grid { grid-template-columns: 1fr; }
+  .graph-course-grid,.plo-rail { grid-template-columns:1fr; }
 }
 
 /* 2026 visual refresh */
