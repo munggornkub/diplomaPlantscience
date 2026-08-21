@@ -246,6 +246,7 @@ main:has(.home-page) { max-width:1600px; padding:0; }
 .home-page { overflow:hidden; }
 .home-hero { background-image:linear-gradient(90deg,rgba(7,34,25,.98) 0%,rgba(7,34,25,.88) 36%,rgba(7,34,25,.28) 67%,rgba(7,34,25,.08) 100%),url('/images/plant-science-hero.png'); background-position:center; background-size:cover; color:white; display:grid; grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr); min-height:680px; overflow:hidden; padding:clamp(3rem,7vw,7rem); position:relative; }
 .home-hero-copy { align-self:center; max-width:760px; position:relative; z-index:2; }
+.institution-lockup{border-left:3px solid var(--lime);display:grid;gap:.15rem;margin-bottom:1.25rem;padding-left:1rem}.institution-lockup strong{font-size:clamp(1.05rem,1.8vw,1.35rem);letter-spacing:.01em}.institution-lockup span{color:#c9dace;font-size:.92rem}
 .hero-kicker,.section-kicker { color:var(--lime); font-family:var(--font-mono); font-size:.72rem; font-weight:600; letter-spacing:.16em; }
 .home-hero h1 { font-size:clamp(3.5rem,7vw,7.2rem); letter-spacing:-.055em; line-height:.83; margin:1.5rem 0; }
 .home-hero h1 span { color:#a9c1b2; display:block; font-size:.48em; font-weight:400; letter-spacing:-.03em; margin-bottom:.28em; }

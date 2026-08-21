@@ -11,7 +11,11 @@ export default function Home() {
   return <div className="home-page">
     <section className="home-hero">
       <div className="home-hero-copy">
-        <p className="hero-kicker">KALASIN UNIVERSITY · 2570</p>
+        <div className="institution-lockup">
+          <strong>มหาวิทยาลัยกาฬสินธุ์</strong>
+          <span>คณะเทคโนโลยีการเกษตร</span>
+        </div>
+        <p className="hero-kicker">KALASIN UNIVERSITY · FACULTY OF AGRICULTURAL TECHNOLOGY · 2570</p>
         <h1><span>Diploma in</span> Plant Science</h1>
         <p className="hero-thai">หลักสูตรประกาศนียบัตรวิชาชีพชั้นสูง<br/>สาขาวิชาพืชศาสตร์</p>
         <p className="hero-lead">พัฒนานักปฏิบัติด้านพืชศาสตร์ที่ผลิตเป็น ใช้เทคโนโลยีได้ แก้ปัญหาหน้างาน และเชื่อมการเกษตรกับธุรกิจอย่างยั่งยืน</p>
