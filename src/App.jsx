@@ -10,6 +10,7 @@ import Faculty from "./pages/Faculty";
 import OBE from "./pages/OBE";
 import StakeholderNeeds from "./pages/StakeholderNeeds";
 import Benchmark from "./pages/Benchmark";
+import LabourMarketBenchmark from "./pages/LabourMarketBenchmark";
 import PLO from "./pages/PLO";
 import YLO from "./pages/YLO";
 import CLO from "./pages/CLO";
@@ -39,6 +40,7 @@ export default function App() {
             <Route path="/obe" element={<OBE />} />
             <Route path="/sh-needs" element={<StakeholderNeeds />} />
             <Route path="/benchmark" element={<Benchmark />} />
+            <Route path="/labour-market" element={<LabourMarketBenchmark />} />
             <Route path="/plo" element={<PLO />} />
             <Route path="/ylo" element={<YLO />} />
             <Route path="/clo" element={<CLO />} />

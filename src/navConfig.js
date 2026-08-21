@@ -16,6 +16,7 @@ export const NAV_GROUPS = [
       { to: "/obe", label: "OBE", desc: "พื้นที่สำหรับกระบวนการ OBE" },
       { to: "/sh-needs", label: "SH Needs", desc: "ผลสำรวจผู้มีส่วนได้ส่วนเสีย 424 คำตอบ" },
       { to: "/benchmark", label: "Benchmark", desc: "เปรียบเทียบหลักสูตรและวิเคราะห์ช่องว่าง" },
+      { to: "/labour-market", label: "Labour Market", desc: "หลักฐานจากประกาศงานด้านพืช" },
       { to: "/plo", label: "PLO", desc: "ผลลัพธ์ระดับหลักสูตร 6 ข้อ" },
       { to: "/ylo", label: "YLO", desc: "ผลลัพธ์ชั้นปี 4 ข้อ" },
       { to: "/clo", label: "CLO", desc: "ผลลัพธ์และ KSA รายวิชา" },
