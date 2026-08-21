@@ -8,3 +8,6 @@ export const stakeholders = [
   { id: "SH7", group: "สภาวิชาชีพ", method: "ขอความเห็นเป็นลายลักษณ์อักษร", sampleSize: "ยังไม่กำหนด", period: "ยังไม่ดำเนินการเก็บข้อมูล", priority: "รอประเมินหลังเก็บข้อมูล" },
   { id: "SH8", group: "ครูแนะแนวโรงเรียนมัธยม", method: "แบบสอบถาม/เยี่ยมโรงเรียนเครือข่าย", sampleSize: "ยังไม่กำหนด", period: "ยังไม่ดำเนินการเก็บข้อมูล", priority: "รอประเมินหลังเก็บข้อมูล" },
 ];
+
+// Single OBE data entry point for visualisations.
+export { stakeholderGroups, stakeholderNeeds, surveySummary } from "./stakeholderData";
