@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import SiteNav from "./SiteNav";
-import Sidebar from "./Sidebar";
 import Home from "./pages/Home";
 import Structure from "./pages/Structure";
 import Courses from "./pages/Courses";
@@ -26,9 +25,8 @@ import NotFound from "./pages/NotFound";
 export default function App() {
   return (
     <div className="site-shell">
-      <header className="site-header"><a className="brand" href="/">PLANT SCIENCE <span>CURRICULUM</span></a><SiteNav /></header>
+      <header className="site-header"><a className="brand" href="/"><span className="brand-mark">PS</span><span className="brand-copy"><strong>PLANT SCIENCE</strong><small>DIPLOMA PROGRAM</small></span></a><SiteNav /></header>
       <div className="layout">
-        <Sidebar />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
