@@ -97,6 +97,9 @@ def markdown_name_sources():
 
 def curriculum_name_sources():
     text = CURRICULUM_DATA.read_text(encoding="utf-8")
+    courses_start = text.index("export const courses = [")
+    courses_end = text.index("\n];", courses_start)
+    text = text[courses_start:courses_end]
     return {
         code: (normalize_line(thai), "")
         for code, thai in re.findall(r'\["(\d{5}[-*]\d{4})",\s*"([^"]+)"', text)

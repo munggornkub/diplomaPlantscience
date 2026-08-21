@@ -701,7 +701,7 @@
     },
     {
       "code": "30000-1102",
-      "thai": "30000-1316",
+      "thai": "ทักษะการเขียนและการพูดภาษาไทยในงานอาชีพ",
       "english": "Occupational Thai Writing and Speaking Skills",
       "plos": [
         "PLO1",
@@ -908,7 +908,7 @@
     },
     {
       "code": "30000-1201",
-      "thai": "30000*1303",
+      "thai": "ภาษาอังกฤษสำหรับงานอาชีพ",
       "english": "English for Career",
       "plos": [
         "PLO1",
@@ -2941,7 +2941,7 @@
     },
     {
       "code": "30905*1007",
-      "thai": "30905*1002",
+      "thai": "สถิติเพื่อการวิจัยด้านพืชศาสตร์",
       "english": "Statistics for Research in Plant Science",
       "plos": [
         "PLO2",
@@ -4906,7 +4906,7 @@
     },
     {
       "code": "30905*1119",
-      "thai": "30905*1106",
+      "thai": "เกษตรแม่นยำ",
       "english": "Precision Agriculture",
       "plos": [
         "PLO2",
