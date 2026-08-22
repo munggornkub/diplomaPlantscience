@@ -97,7 +97,9 @@ export default function Faculty() {
               <span className="faculty-number">{String(index + 1).padStart(2, "0")}</span>
               <div>
                 <p>ผู้ช่วยศาสตราจารย์</p>
-                <h2>{person.name}</h2>
+                <h2 className={person.name === "สายัญ พันธ์สมบูรณ์" ? "faculty-name-single-line" : undefined}>
+                  {person.name === "สายัญ พันธ์สมบูรณ์" ? "สายัญ\u00a0พันธ์สมบูรณ์" : person.name}
+                </h2>
                 {responsibleNames.includes(person.name) && <span className="role-badge">ผู้รับผิดชอบหลักสูตร</span>}
               </div>
             </div>
