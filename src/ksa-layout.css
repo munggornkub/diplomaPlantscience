@@ -1,0 +1,7 @@
+.ksa-level-grid.ksa-knowledge-row{grid-template-columns:repeat(6,minmax(0,1fr))}
+.ksa-knowledge-row .ksa-level-copy{padding:.85rem}
+.ksa-knowledge-row .ksa-level-copy h3{font-size:.96rem}
+.ksa-knowledge-row .ksa-level-copy>p{font-size:.69rem;min-height:76px}
+.ksa-knowledge-row .ksa-level-copy>div{font-size:.65rem}
+@media(max-width:1200px){.ksa-level-grid.ksa-knowledge-row{grid-template-columns:repeat(3,minmax(0,1fr))}.ksa-knowledge-row .ksa-level-copy{padding:1rem}.ksa-knowledge-row .ksa-level-copy h3{font-size:1.05rem}.ksa-knowledge-row .ksa-level-copy>p{font-size:.73rem;min-height:68px}.ksa-knowledge-row .ksa-level-copy>div{font-size:.69rem}}
+@media(max-width:760px){.ksa-level-grid.ksa-knowledge-row{grid-template-columns:1fr}.ksa-knowledge-row .ksa-level-copy>p{min-height:0}}
