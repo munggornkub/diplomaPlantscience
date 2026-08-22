@@ -4,6 +4,7 @@ import { responsibleNames } from "../curriculumData";
 const faculty = [
   {
     name: "ปริญดา แข็งขัน",
+    image: "/images/faculty/parinda-khaengkhan.webp",
     qualifications: [
       ["Ph.D. (Materials and Life Science)", "Kyoto Institute of Technology", "2552"],
       ["วท.ม. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2540"],
@@ -12,6 +13,7 @@ const faculty = [
   },
   {
     name: "ปิยะพงษ์ บุญสรรค์",
+    image: "/images/faculty/piyapong-boonsan.webp",
     qualifications: [
       ["วท.บ. (เกษตรศาสตร์)", "มหาวิทยาลัยเชียงใหม่", "2540"],
       ["วท.บ. (เกษตรศาสตร์)", "สถาบันเทคโนโลยีราชมงคล", "2537"],
@@ -19,6 +21,7 @@ const faculty = [
   },
   {
     name: "สายัญ พันธ์สมบูรณ์",
+    image: "/images/faculty/sayan-phansomboon.webp",
     qualifications: [
       ["ปร.ด. (เกษตรเขตร้อน)", "มหาวิทยาลัยเกษตรศาสตร์", "2563"],
       ["วท.ม. (ปริโตเคมีและวิทยาศาสตร์พอลิเมอร์)", "จุฬาลงกรณ์มหาวิทยาลัย", "2551"],
@@ -27,6 +30,7 @@ const faculty = [
   },
   {
     name: "อิทธิพล ขึมภูเขียว",
+    image: "/images/faculty/ittipon-khuemphukhieo.webp",
     qualifications: [
       ["Ph.D. (Plant Breeding)", "Texas A&M University, USA", "2568"],
       ["วท.ม. (เกษตรศาสตร์)", "มหาวิทยาลัยอุบลราชธานี", "2557"],
@@ -44,6 +48,7 @@ const faculty = [
   },
   {
     name: "เอกรินทร์ สารีพัว",
+    image: "/images/faculty/ekkarin-sareepuang.webp",
     qualifications: [
       ["ปร.ด. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2558"],
       ["วท.ม. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2554"],
