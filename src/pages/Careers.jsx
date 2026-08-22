@@ -36,7 +36,7 @@ function CareerModal({ career, onClose }) {
             <section><h3>ทักษะสำคัญ</h3><div className="career-chip-list soft">{career.skills.map((item) => <span key={item}>{item}</span>)}</div></section>
             <section><h3>เครื่องมือและเทคโนโลยี</h3><div className="career-chip-list soft">{career.tools.map((item) => <span key={item}>{item}</span>)}</div></section>
             <section><h3>PLO ที่เกี่ยวข้อง</h3><div className="career-plo-list">{career.plos.map((item) => <strong key={item}>{item}</strong>)}</div></section>
-            <section><h3>รายวิชาที่เตรียมความพร้อม</h3><ul className="career-course-list">{career.courses.map((item) => <li key={item}>{item}</li>)}</ul></section>
+            <section><h3>รายวิชาที่เตรียมความพร้อม</h3><ul className="career-course-list">{career.courses.map((course) => <li key={course.code}><code>{course.code}</code> {course.name}</li>)}</ul></section>
             <section className="career-wide"><h3>การเติบโตในสายอาชีพ</h3><div className="career-progression">{career.progression.map((item, index) => <div key={item}><span>{index + 1}</span><strong>{item}</strong></div>)}</div></section>
           </div>
         </div>
