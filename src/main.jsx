@@ -8,6 +8,7 @@ import "./jobs.css";
 import "./ksa.css";
 import "./ksa-layout.css";
 import "./teaching.css";
+import "./assessment.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
