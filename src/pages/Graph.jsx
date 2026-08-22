@@ -31,8 +31,6 @@ export default function Graph() {
       <div><strong>{activeMap.length}</strong><span>รายวิชาในแผนหลักสูตร</span></div>
       <div><strong>6</strong><span>PLO ที่ตรวจสอบได้</span></div>
     </section>
-    <p className="source-note">คลิก PLO เพื่อเปิดรายวิชาในหน้าต่างลอย จากนั้นคลิกรายวิชาเพื่อดู CLO โดยไม่ต้องเลื่อนลงด้านล่าง · กด Esc หรือปุ่ม × เพื่อปิด</p>
-
     <section className="graph-launcher">
       <header><p className="section-kicker">PROGRAM LEARNING OUTCOMES</p><h2>เลือก PLO ที่ต้องการสำรวจ</h2><p>แต่ละ PLO จะแสดงรายวิชาที่สนับสนุนผลลัพธ์ พร้อมจำนวน CLO ที่เชื่อมโยง</p></header>
       <div className="plo-card-grid">{plos.map((text, index) => {
