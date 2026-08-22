@@ -5,6 +5,7 @@ import App from "./App";
 import "./styles.css";
 import "./careers.css";
 import "./jobs.css";
+import "./ksa.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
