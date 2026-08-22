@@ -5,7 +5,7 @@ const faculty = [
   {
     name: "ปริญดา แข็งขัน",
     image: "/images/faculty/parinda-khaengkhan.webp",
-    expertise: [["🌺", "พืชสวน"], ["🌱", "คุณภาพเมล็ดพันธุ์และ Seed treatment"], ["💧", "การผลิตผักและไฮโดรโปนิกส์"], ["🍃", "สรีระวิทยาพืช"]],
+    expertise: [["🌺", "พืชสวน"], ["🌱", "คุณภาพเมล็ดพันธุ์และ Seed treatment"], ["🫘", "การผลิตผักและไฮโดรโปนิกส์"], ["🍃", "สรีระวิทยาพืช"]],
     qualifications: [
       ["Ph.D. (Materials and Life Science)", "Kyoto Institute of Technology", "2552"],
       ["วท.ม. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2540"],
