@@ -18,14 +18,14 @@ export default function Jobs() {
     </section>
 
     <section className="jobs-skill-section">
-      <header><div><p className="section-kicker">SKILL CLUSTERS</p><h2>กลุ่มงานและสมรรถนะสำคัญ</h2></div><p>สังเคราะห์จากคำที่ปรากฏในรายละเอียดตำแหน่งงานตัวอย่าง</p></header>
+      <header><div><p className="section-kicker">SKILL CLUSTERS</p><h2>กลุ่มงานและสมรรถนะสำคัญ</h2></div></header>
       <div className="jobs-skill-grid">{skillGroups.map((item) => <button className={group === item.id ? "active" : ""} key={item.id} type="button" onClick={() => setGroup(group === item.id ? "all" : item.id)}>
         <span className="jobs-skill-icon">{item.icon}</span><span className="jobs-skill-copy"><strong>{item.label}</strong><small>{item.jobs} ตำแหน่งตัวอย่าง</small><span>{item.skills.slice(0, 3).join(" · ") || "สมรรถนะสนับสนุนงานพืช"}</span></span><span className="jobs-skill-plos">{item.plos.map((plo) => <i key={plo}>{plo}</i>)}</span>
       </button>)}</div>
     </section>
 
     <section className="jobs-demand-section">
-      <div><p className="section-kicker">DEMAND SIGNALS</p><h2>ทักษะที่พบซ้ำในประกาศ</h2><p>ขนาดแถบแสดงจำนวนครั้งที่คำทักษะปรากฏในชุดตัวอย่าง ไม่ใช่สัดส่วนของตลาดงานทั้งหมด</p></div>
+      <div><p className="section-kicker">DEMAND SIGNALS</p><h2>ทักษะที่พบซ้ำในประกาศ</h2></div>
       <div className="jobs-skill-bars">{topSkills.map(({ skill, count }) => <div key={skill}><span>{skill}</span><i><b style={{ width: `${Math.max(18, count / topSkills[0].count * 100)}%` }} /></i><strong>{count}</strong></div>)}</div>
     </section>
 
@@ -36,7 +36,7 @@ export default function Jobs() {
         return job.url ? <a className="jobs-card" href={job.url} target="_blank" rel="noreferrer" key={job.id}>{content}</a> : <article className="jobs-card" key={job.id}>{content}</article>;
       })}</div>
     </section>
-    <section className="jobs-conclusion"><span>CURRICULUM IMPLICATION</span><div><h2>PLO1–PLO6 ครอบคลุมทิศทางตลาดแล้ว</h2><p>หลักสูตรควรเน้นประสบการณ์จริงเพิ่มเติมในด้านข้อมูลภาคสนาม ภาษาอังกฤษทางเทคนิค GIS/IoT การตรวจสอบย้อนกลับ การนำเสนอข้อมูล และการทำงานร่วมกับเกษตรกร</p></div></section>
+    <section className="jobs-conclusion"><span>PLO ALIGNMENT</span><div><h2>ความต้องการของงานเชื่อมโยงกับ PLO1–PLO6</h2><p>ข้อมูลภาคสนาม ภาษาอังกฤษทางเทคนิค GIS/IoT การตรวจสอบย้อนกลับ การนำเสนอข้อมูล และการทำงานร่วมกับเกษตรกร ปรากฏในชุดทักษะของตลาดแรงงาน</p></div></section>
     <p className="source-note">ข้อมูลเป็น snapshot ณ วันสำรวจ · จำนวน {jobThaiSnapshot.agricultureJobs} ตำแหน่งเป็นหมวดเกษตรรวม · หลายตำแหน่งอาจกำหนดปริญญาตรี จึงใช้เป็นหลักฐานด้านภาระงานและทักษะ ไม่ใช่การรับรองสิทธิสมัครงานของผู้จบ ปวส. · ชุด Jobsdb บันทึกไว้ {labourMarketSnapshot.examples} ตัวอย่าง</p>
   </>;
 }
