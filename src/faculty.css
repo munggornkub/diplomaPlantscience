@@ -1,1 +1,5 @@
-.faculty-card:has(.faculty-photo){overflow:hidden;padding:0}.faculty-card:has(.faculty-photo) .faculty-card-head,.faculty-card:has(.faculty-photo) .qualification-list{margin-left:1.4rem;margin-right:1.4rem}.faculty-card:has(.faculty-photo) .faculty-card-head{margin-top:1.25rem}.faculty-card:has(.faculty-photo) .qualification-list{margin-bottom:1.4rem}.faculty-photo{aspect-ratio:2.25/1;overflow:hidden;position:relative}.faculty-photo:after{background:linear-gradient(0deg,#0a291d70,transparent 45%);content:'';inset:0;position:absolute}.faculty-photo img{height:100%;object-fit:cover;object-position:center 34%;width:100%}@media(max-width:560px){.faculty-photo{aspect-ratio:1.65/1}}
+.faculty-card{position:relative}
+.faculty-card:has(.faculty-photo) .faculty-card-head{padding-right:108px}
+.faculty-photo{border:3px solid white;border-radius:14px;box-shadow:0 8px 24px #153c2826;height:108px;overflow:hidden;position:absolute;right:1.2rem;top:1.2rem;width:86px;z-index:1}
+.faculty-photo img{height:100%;object-fit:cover;object-position:center 30%;width:100%}
+@media(max-width:560px){.faculty-card:has(.faculty-photo) .faculty-card-head{padding-right:86px}.faculty-photo{height:88px;right:1rem;top:1rem;width:70px}}
