@@ -59,6 +59,15 @@ const faculty = [
   },
 ];
 
+const orderedFaculty = [...faculty].sort((a, b) => {
+  const aOrder = responsibleNames.indexOf(a.name);
+  const bOrder = responsibleNames.indexOf(b.name);
+  if (aOrder !== -1 && bOrder !== -1) return aOrder - bOrder;
+  if (aOrder !== -1) return -1;
+  if (bOrder !== -1) return 1;
+  return 0;
+});
+
 export default function Faculty() {
   return (
     <>
@@ -74,7 +83,7 @@ export default function Faculty() {
       </div>
 
       <section className="faculty-grid" aria-label="รายชื่ออาจารย์ประจำหลักสูตร">
-        {faculty.map((person, index) => (
+        {orderedFaculty.map((person, index) => (
           <article className="faculty-card" key={person.name}>
             <div className="faculty-card-head">
               <span className="faculty-number">{String(index + 1).padStart(2, "0")}</span>
