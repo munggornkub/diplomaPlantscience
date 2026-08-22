@@ -1,5 +1,6 @@
 .faculty-card{position:relative}
-.faculty-card:has(.faculty-photo) .faculty-card-head{padding-right:108px}
-.faculty-photo{border:3px solid white;border-radius:14px;box-shadow:0 8px 24px #153c2826;height:108px;overflow:hidden;position:absolute;right:1.2rem;top:1.2rem;width:86px;z-index:1}
+.faculty-card:has(.faculty-photo) .faculty-card-head{min-height:190px;padding-right:184px}
+.faculty-photo{border:4px solid white;border-radius:18px;box-shadow:0 12px 30px #153c2828;height:200px;overflow:hidden;position:absolute;right:1.25rem;top:1.25rem;width:160px;z-index:1}
 .faculty-photo img{height:100%;object-fit:cover;object-position:center 30%;width:100%}
-@media(max-width:560px){.faculty-card:has(.faculty-photo) .faculty-card-head{padding-right:86px}.faculty-photo{height:88px;right:1rem;top:1rem;width:70px}}
+@media(max-width:680px){.faculty-card:has(.faculty-photo) .faculty-card-head{min-height:148px;padding-right:136px}.faculty-photo{height:150px;right:1rem;top:1rem;width:120px}}
+@media(max-width:420px){.faculty-card:has(.faculty-photo) .faculty-card-head{min-height:132px;padding-right:104px}.faculty-photo{height:128px;width:96px}}
