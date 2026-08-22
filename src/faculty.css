@@ -4,7 +4,11 @@
 .faculty-photo img{height:100%;object-fit:cover;object-position:center 30%;width:100%}
 .faculty-card-head h2.faculty-name-single-line{display:inline-block;font-size:1rem!important;letter-spacing:-.03em;max-width:none;white-space:nowrap!important;word-break:keep-all}
 .faculty-expertise{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.8rem;max-width:220px}
-.expertise-icon{align-items:center;background:#edf6ef;border:1px solid #d4e6d8;border-radius:12px;box-shadow:0 5px 12px #153c2812;cursor:help;display:inline-flex;font-size:1.05rem;height:36px;justify-content:center;transition:transform .18s ease,box-shadow .18s ease;width:36px}
+.expertise-icon{align-items:center;background:#edf6ef;border:1px solid #d4e6d8;border-radius:12px;box-shadow:0 5px 12px #153c2812;color:#28734b;cursor:help;display:inline-flex;height:36px;justify-content:center;transition:transform .18s ease,box-shadow .18s ease;width:36px}
+.expertise-icon svg{fill:none;height:22px;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.65;width:22px}
+.expertise-fertilizer,.expertise-soil,.expertise-fertility,.expertise-soilTest{background:#f7f1e7;border-color:#ead9bb;color:#8b642f}
+.expertise-drone,.expertise-precision,.expertise-research,.expertise-smartFarm{background:#ebf3f7;border-color:#cfe1e9;color:#31708c}
+.expertise-disease,.expertise-pest,.expertise-pesticide,.expertise-biocontrol{background:#f8eeee;border-color:#eccfcf;color:#a14d4d}
 .expertise-icon:hover{box-shadow:0 8px 18px #153c2820;transform:translateY(-2px)}
 @media(max-width:680px){.faculty-card:has(.faculty-photo) .faculty-card-head{min-height:148px;padding-right:136px}.faculty-photo{height:150px;right:1rem;top:1rem;width:120px}}
-@media(max-width:420px){.faculty-card:has(.faculty-photo) .faculty-card-head{min-height:132px;padding-right:104px}.faculty-photo{height:128px;width:96px}.faculty-expertise{gap:.3rem}.expertise-icon{border-radius:10px;font-size:.9rem;height:30px;width:30px}}
+@media(max-width:420px){.faculty-card:has(.faculty-photo) .faculty-card-head{min-height:132px;padding-right:104px}.faculty-photo{height:128px;width:96px}.faculty-expertise{gap:.3rem}.expertise-icon{border-radius:10px;height:30px;width:30px}.expertise-icon svg{height:18px;width:18px}}

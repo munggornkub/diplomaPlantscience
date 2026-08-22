@@ -1,11 +1,12 @@
 import { PageHead } from "./ui";
 import { responsibleNames } from "../curriculumData";
+import { ExpertiseIcon } from "./ExpertiseIcon";
 
 const faculty = [
   {
     name: "ปริญดา แข็งขัน",
     image: "/images/faculty/parinda-khaengkhan.webp",
-    expertise: [["🌺", "พืชสวน"], ["🌱", "คุณภาพเมล็ดพันธุ์และ Seed treatment"], ["🫘", "การผลิตผักและไฮโดรโปนิกส์"], ["🍃", "สรีระวิทยาพืช"]],
+    expertise: [["flower", "พืชสวน"], ["seed", "คุณภาพเมล็ดพันธุ์และ Seed treatment"], ["hydroponic", "การผลิตผักและไฮโดรโปนิกส์"], ["physiology", "สรีระวิทยาพืช"]],
     qualifications: [
       ["Ph.D. (Materials and Life Science)", "Kyoto Institute of Technology", "2552"],
       ["วท.ม. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2540"],
@@ -15,7 +16,7 @@ const faculty = [
   {
     name: "ปิยะพงษ์ บุญสรรค์",
     image: "/images/faculty/piyapong-boonsan.webp",
-    expertise: [["🧪", "ปุ๋ย"], ["🪨", "ปฐพีศาสตร์"], ["🌱", "ความอุดมสมบูรณ์ของดิน"], ["📊", "การวัดคุณภาพดิน"]],
+    expertise: [["fertilizer", "ปุ๋ย"], ["soil", "ปฐพีศาสตร์"], ["fertility", "ความอุดมสมบูรณ์ของดิน"], ["soilTest", "การวัดคุณภาพดิน"]],
     qualifications: [
       ["วท.ม. (เกษตรศาสตร์-ปฐพีวิทยา)", "มหาวิทยาลัยเชียงใหม่", "2540"],
       ["วท.บ. (เกษตรศาสตร์)", "สถาบันเทคโนโลยีราชมงคล วิทยาเขตบางพระ", "2537"],
@@ -24,7 +25,7 @@ const faculty = [
   {
     name: "สายัญ พันธ์สมบูรณ์",
     image: "/images/faculty/sayan-phansomboon.webp",
-    expertise: [["🌿", "มันสำปะหลัง"], ["💧", "ผักไฮโดรโปนิกส์"], ["🚿", "ระบบน้ำ"], ["🤝", "เครือข่ายชุมชน"]],
+    expertise: [["cassava", "มันสำปะหลัง"], ["hydroponic", "ผักไฮโดรโปนิกส์"], ["irrigation", "ระบบน้ำ"], ["community", "เครือข่ายชุมชน"]],
     qualifications: [
       ["ปร.ด. (เกษตรเขตร้อน)", "มหาวิทยาลัยเกษตรศาสตร์", "2563"],
       ["วท.ม. (ปริโตเคมีและวิทยาศาสตร์พอลิเมอร์)", "จุฬาลงกรณ์มหาวิทยาลัย", "2551"],
@@ -34,7 +35,7 @@ const faculty = [
   {
     name: "อิทธิพล ขึมภูเขียว",
     image: "/images/faculty/ittipon-khuemphukhieo.webp",
-    expertise: [["🎋", "อ้อย"], ["🧬", "การปรับปรุงพันธุ์พืช"], ["📍", "เกษตรแม่นยำ"], ["🚁", "โดรนถ่ายภาพ"]],
+    expertise: [["sugarcane", "อ้อย"], ["breeding", "การปรับปรุงพันธุ์พืช"], ["precision", "เกษตรแม่นยำ"], ["drone", "โดรนถ่ายภาพ"]],
     qualifications: [
       ["Ph.D. (Plant Breeding)", "Texas A&M University, USA", "2568"],
       ["วท.ม. (เกษตรศาสตร์)", "มหาวิทยาลัยอุบลราชธานี", "2557"],
@@ -44,7 +45,7 @@ const faculty = [
   {
     name: "อยุธย์ คงปั้น",
     image: "/images/faculty/ayut-kongpan.webp",
-    expertise: [["🧬", "การปรับปรุงพันธุ์พืช"], ["📊", "สถิติและการวิจัย"], ["🌱", "หลักการผลิตพืช"], ["🍃", "สรีระวิทยาพืช"]],
+    expertise: [["breeding", "การปรับปรุงพันธุ์พืช"], ["research", "สถิติและการวิจัย"], ["production", "หลักการผลิตพืช"], ["physiology", "สรีระวิทยาพืช"]],
     qualifications: [
       ["วท.ด. (พืชไร่)", "มหาวิทยาลัยเชียงใหม่", "2554"],
       ["วท.ม. (เกษตรศาสตร์)", "มหาวิทยาลัยเชียงใหม่", "2545"],
@@ -54,7 +55,7 @@ const faculty = [
   {
     name: "เอกรินทร์ สารีพัว",
     image: "/images/faculty/ekkarin-sareepuang.webp",
-    expertise: [["🧬", "การปรับปรุงพันธุ์ผัก"], ["🌸", "พืชสวนและไม้ดอก"], ["🥬", "การผลิตผักและมาตรฐานสินค้าเกษตร"], ["📡", "Smart farm"]],
+    expertise: [["breeding", "การปรับปรุงพันธุ์ผัก"], ["flower", "พืชสวนและไม้ดอก"], ["standards", "การผลิตผักและมาตรฐานสินค้าเกษตร"], ["smartFarm", "Smart farm"]],
     qualifications: [
       ["ปร.ด. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2558"],
       ["วท.ม. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2554"],
@@ -64,7 +65,7 @@ const faculty = [
   {
     name: "ปุญญิศา ชารีรักษ์",
     image: "/images/faculty/punyisa-chareerak.webp",
-    expertise: [["🦠", "โรคพืช"], ["🐛", "ศัตรูพืช"], ["🛡️", "สารป้องกันกำจัดศัตรูพืช"], ["🧫", "สารชีวภาพควบคุมศัตรูพืช"]],
+    expertise: [["disease", "โรคพืช"], ["pest", "ศัตรูพืช"], ["pesticide", "สารป้องกันกำจัดศัตรูพืช"], ["biocontrol", "สารชีวภาพควบคุมศัตรูพืช"]],
     qualifications: [
       ["ปร.ด. (โรคพืชวิทยา)", "มหาวิทยาลัยขอนแก่น", "2559"],
       ["วท.ม. (โรคพืช)", "มหาวิทยาลัยขอนแก่น", "2551"],
@@ -111,7 +112,7 @@ export default function Faculty() {
                 {person.expertise && (
                   <div className="faculty-expertise" aria-label={`ความเชี่ยวชาญของ ${person.name}`}>
                     {person.expertise.map(([icon, label]) => (
-                      <span className="expertise-icon" key={label} title={label} aria-label={label} role="img">{icon}</span>
+                      <ExpertiseIcon name={icon} label={label} key={label} />
                     ))}
                   </div>
                 )}
