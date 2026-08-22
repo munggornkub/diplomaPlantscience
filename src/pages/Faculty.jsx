@@ -8,7 +8,7 @@ const faculty = [
     image: "/images/faculty/parinda-khaengkhan.webp",
     expertise: [["flower", "พืชสวน"], ["seed", "คุณภาพเมล็ดพันธุ์และ Seed treatment"], ["hydroponic", "การผลิตผักและไฮโดรโปนิกส์"], ["physiology", "สรีระวิทยาพืช"]],
     qualifications: [
-      ["Ph.D. (Materials and Life Science)", "Kyoto Institute of Technology", "2552"],
+      ["Ph.D. (Materials and Life Science)", "Kyoto Institute of Technology, Kyoto, Japan", "2552"],
       ["วท.ม. (พืชสวน)", "มหาวิทยาลัยขอนแก่น", "2540"],
       ["วท.บ. (เกษตรศาสตร์)", "มหาวิทยาลัยขอนแก่น", "2534"],
     ],
