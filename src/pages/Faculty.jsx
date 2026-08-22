@@ -35,6 +35,7 @@ const faculty = [
   },
   {
     name: "อยุธย์ คงปั้น",
+    image: "/images/faculty/ayut-kongpan.webp",
     qualifications: [
       ["วท.ด. (พืชไร่)", "มหาวิทยาลัยเชียงใหม่", "2554"],
       ["วท.ม. (เกษตรศาสตร์)", "มหาวิทยาลัยเชียงใหม่", "2545"],
@@ -51,6 +52,7 @@ const faculty = [
   },
   {
     name: "ปุญญิศา ชารีรักษ์",
+    image: "/images/faculty/punyisa-chareerak.webp",
     qualifications: [
       ["ปร.ด. (โรคพืชวิทยา)", "มหาวิทยาลัยขอนแก่น", "2559"],
       ["วท.ม. (โรคพืช)", "มหาวิทยาลัยขอนแก่น", "2551"],
@@ -85,6 +87,7 @@ export default function Faculty() {
       <section className="faculty-grid" aria-label="รายชื่ออาจารย์ประจำหลักสูตร">
         {orderedFaculty.map((person, index) => (
           <article className="faculty-card" key={person.name}>
+            {person.image && <div className="faculty-photo"><img src={person.image} alt={`อาจารย์${person.name}`} /></div>}
             <div className="faculty-card-head">
               <span className="faculty-number">{String(index + 1).padStart(2, "0")}</span>
               <div>

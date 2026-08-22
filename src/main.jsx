@@ -9,6 +9,7 @@ import "./ksa.css";
 import "./ksa-layout.css";
 import "./teaching.css";
 import "./assessment.css";
+import "./faculty.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
